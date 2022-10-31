@@ -231,18 +231,28 @@ header{
     width: 275px;
 }
 
-/*Otros artículos (entradas generales)*/
+/*Otros artículos (entradas generales) y aside*/
+
+        /*Otro artículos*/
+
+.others-articles-aside{
+    margin: 5px 10% 0px 10%;
+    height: 550px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .others-articles{
-    margin: 5px 10% 0px 10%;
-    height: auto;
+    height: 530px;
     width: 900px;
     padding: 10px;
 }
 
 .grid-container{    
     display: grid;
-    grid-template-rows: 150px 150px;
+    grid-template-rows: 150px 150px 150px;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin-left: 5px; 
@@ -258,19 +268,24 @@ header{
     object-fit: cover; 
 }
 
-/*Aside*/
+        /*Aside*/
 
 aside{
-    background-color:  rgba(250, 205, 151, 0.364);
     width: 280px;
     height: 500px;
-    float: right;
-    position: sticky;
-    top: 0;
-    margin-right: 10%;
-    margin-top: 37px;
-    padding: 5px;
-    border: 2px solid rgba(67, 65, 65, 0.385);
+    padding: 5px;   
+}
+
+.tittles-aside{
+    color: black;
+    font-size: 110%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.recomended{
+    color: black;
+    font-size: 100%;
 }
 
 .asideitems{
@@ -280,8 +295,8 @@ aside{
 }
 
 .asidesocial img{
-    width: 40px;
-    height: 40px;
+    height: 35px;
+    width: auto;
     padding: 2px;
     margin: 5px;
     border: 1px solid blue;
@@ -294,6 +309,28 @@ aside{
     display: flex;
     justify-content: center;  
 }
+
+.contenedor-aside-otros{
+    margin: 5px 10% 0px 10%;
+    height: 450px;
+    width: 1200px;
+    background-color: #3b5998;
+    display: flex;
+    justify-content: center;
+}
+
+.otros-articulos{
+    height: 450px;
+    width: 800px;
+    background-color: #c7b91f;
+}
+
+.aside-prueba{
+    height: 450px;
+    width: 250px;
+    background-color: #e81179;
+}
+
 
 
 
