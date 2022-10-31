@@ -25,6 +25,8 @@ p{
     justify-content: center;
 }
 
+/*Header*/
+
 header{    
     background-image: url(../imagenes/soviet.jpg);
     background-position: center;
@@ -166,39 +168,41 @@ header{
     padding: 10px;
 }
 
-/*COntenedor carrusel (historia principal), últimos artículos y artículos pulares*/
+/*Contenedor carrusel (historia principal), últimos artículos y artículos populares: banner*/
 
 .banner-container{
     margin: 5px 10% 0px 10%;
-    border: 1px solid black; 
-    height: 600px;
+    height: 500px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .tittles-banner{
     color: black;
-    font-size: 130%;
-    margin-left: 3px;
+    font-size: 120%;
+    margin-top: 5px;
+    margin-left: 10px;
 }
 
 /*Carrusel*/
 
-.carousel-container{    
-    height: auto;
+.carousel-container{
     display: flex;
     font-weight: bold;
-    margin: 5px;
+    margin: 10px;
 }
 
 .carousel{
-    width: 600px;
     height: auto;
+    width: 600px;
 }
 
 .carousel-inner{
     object-fit: cover;    
 }
+
+/*Texto e iconos del carrusel*/
 
 .carousel-caption{
     color: black;
@@ -212,16 +216,86 @@ header{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
     }   
 
-/*Columnas de artículos*/
+/*Columnas de artículos del Banner*/
 
 .columns-container{
     height: 483px;
     width: 290px;
-    background-color: aqua;
-    padding: 5px;
-    margin: 5px;
+    margin-left: 5px;
 }
 
-<div class="article-container">
+.article-container img{
+    margin: 3px;
+    object-fit: cover;
+    height: 146px;
+    width: 275px;
 }
+
+/*Otros artículos (entradas generales)*/
+
+.others-articles{
+    margin: 5px 10% 0px 10%;
+    height: auto;
+    width: 900px;
+    padding: 10px;
+}
+
+.grid-container{    
+    display: grid;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-left: 5px; 
+}
+
+.grid-item{
+    border: 1px solid black;
+}
+
+.grid-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+
+/*Aside*/
+
+aside{
+    background-color:  rgba(250, 205, 151, 0.364);
+    width: 280px;
+    height: 500px;
+    float: right;
+    position: sticky;
+    top: 0;
+    margin-right: 10%;
+    margin-top: 37px;
+    padding: 5px;
+    border: 2px solid rgba(67, 65, 65, 0.385);
+}
+
+.asideitems{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.asidesocial img{
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    margin: 5px;
+    border: 1px solid blue;
+    background-color: #3b5998;
+}
+
+.asiderecomended{
+    margin: 5px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;  
+}
+
+
+
+
 
