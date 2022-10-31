@@ -166,19 +166,29 @@ header{
     padding: 10px;
 }
 
-/*Carrusel*/
+/*COntenedor carrusel (historia principal), últimos artículos y artículos pulares*/
 
-.principal{
-    padding-top: 5px;
-    font-size: 150%;
-    color: black;
-    margin-left: 10%;
+.banner-container{
+    margin: 5px 10% 0px 10%;
+    border: 1px solid black; 
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.carousel-container{
+.tittles-banner{
+    color: black;
+    font-size: 130%;
+    margin-left: 3px;
+}
+
+/*Carrusel*/
+
+.carousel-container{    
     height: auto;
     display: flex;
-    margin: 3px 10% 0px 10%;
+    font-weight: bold;
+    margin: 5px;
 }
 
 .carousel{
@@ -200,20 +210,18 @@ header{
 
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-    } 
-    
-/*.carousel-container img{
-    margin: 1px;
-    width: 397px;
-    height: 348px;
-    object-fit: cover;
+    }   
 
-}*/
+/*Columnas de artículos*/
 
-/*últimos artículos*/
-
-.last-articles{
-    width: 1197px;
-    height: 348px;
-    border: 1px solid black;
+.columns-container{
+    height: 483px;
+    width: 290px;
+    background-color: aqua;
+    padding: 5px;
+    margin: 5px;
 }
+
+<div class="article-container">
+}
+
