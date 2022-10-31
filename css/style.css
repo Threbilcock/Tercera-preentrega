@@ -8,10 +8,6 @@ li{
     list-style: none;
 }
 
-h1{
-    margin: 10px 2px 0px 10px;
-}
-
 #h1page{
     text-align: center;
 }
@@ -171,6 +167,13 @@ header{
 }
 
 /*Carrusel*/
+
+.principal{
+    padding-top: 5px;
+    font-size: 150%;
+    color: black;
+    margin-left: 10%;
+}
 
 .carousel-container{
     height: auto;
