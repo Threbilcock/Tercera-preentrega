@@ -31,23 +31,38 @@ header{
     background-image: url(../imagenes/soviet.jpg);
     background-position: center;
     background-size: cover;  
-    min-width: 1200px;
+    min-width: 1440px;
     height: auto;
     margin: 0;
     padding: 0px;
 }
 
 .topheader{
-    margin: 0px 10% 0px 10%;
+    width: 1200px;
+    margin: auto;
+    padding: 5px;
+    background-color: #8B0000;
+    display: flex;
+    justify-content: center;    
+}
+
+.topheader a{
+    margin: 10px;    
+}
+
+.footer{
+    width: 1200px;
+    margin: auto;
     padding: 5px;
     background-color: #8B0000;
     display: flex;
     justify-content: center;       
 }
 
-.topheader a{
+.footer a{
     margin: 10px;    
 }
+
 
 /*Logo, título y subtítulo*/
 
@@ -100,7 +115,8 @@ header{
 
 .nav{
     background-color: #8B0000; 
-    margin: 0px 10% 0px 10%;
+    width: 1200px;
+    margin: auto;
     padding: 5px 10px 5px 10px;
     display: flex;
     align-items: center;
@@ -171,11 +187,13 @@ header{
 /*Contenedor carrusel (historia principal), últimos artículos y artículos populares: banner*/
 
 .banner-container{
-    margin: 5px 10% 0px 10%;
+    padding: 0% 10px 0% 5px;
     height: 500px;
+    margin: auto;
+    width: auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    background-color: #e81179;
 }
 
 .tittles-banner{
@@ -193,13 +211,15 @@ header{
     margin: 10px;
 }
 
-.carousel{
-    height: auto;
+.carousel-inner{
+    object-fit: cover;  
     width: 600px;
 }
 
-.carousel-inner{
-    object-fit: cover;    
+.carousel-inner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
 }
 
 /*Texto e iconos del carrusel*/
@@ -219,16 +239,22 @@ header{
 /*Columnas de artículos del Banner*/
 
 .columns-container{
-    height: 483px;
+    height: 500px;
     width: 290px;
-    margin-left: 5px;
+    margin: 2px;
 }
 
-.article-container img{
-    margin: 3px;
-    object-fit: cover;
-    height: 146px;
-    width: 275px;
+.article-container-grid{
+    display: grid;
+    grid-template-rows: repeat(3, 148px);
+    grid-template-columns: 1fr;
+    gap: 4px;
+}
+
+.article-container-grid img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
 }
 
 /*Otros artículos (entradas generales) y aside*/
@@ -236,18 +262,16 @@ header{
         /*Otro artículos*/
 
 .others-articles-aside{
-    margin: 5px 10% 0px 10%;
     height: 550px;
-    padding: 10px;
+    margin: auto;
+    padding: 0% 5px 0% 5px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .others-articles{
     height: 530px;
     width: 900px;
-    padding: 10px;
 }
 
 .grid-container{    
@@ -319,17 +343,137 @@ aside{
     justify-content: center;
 }
 
-.otros-articulos{
-    height: 450px;
-    width: 800px;
-    background-color: #c7b91f;
-}
-
 .aside-prueba{
     height: 450px;
     width: 250px;
     background-color: #e81179;
 }
+
+/*Responsive*/
+
+    
+    @media only screen and (min-width: 1200px) and (max-width: 1440px){
+        header{
+            min-width: 1200px;
+        }
+    } 
+
+    @media only screen and (min-width: 1024px) and (max-width: 1199px){
+        header{
+            min-width: 1024px;            
+        }
+        .topheader{
+            width: auto;
+        }
+        
+        .footer{
+            width: auto;
+        }
+        
+        .nav{
+            width: auto;
+        }
+
+    } 
+
+    @media only screen and (min-width: 879px) and (max-width: 1023px){
+        header{
+            min-width: 866px;
+        }
+
+        .logo{
+            width: 130px;
+            height: auto;
+        }
+
+        .title{
+            color: rgb(255, 255, 255);
+            font-size: 300%;
+        }
+        
+        .title:hover{
+            color: rgb(0, 0, 0);
+            font-size: 150%;
+        }
+        
+        .sub-title{
+            font-size: 150%;    
+        }
+
+        .topheader{
+            width: auto;
+        }
+        
+        .footer{
+            width: auto;
+        }
+        
+        .nav{
+            width: auto;
+        }
+    } 
+
+    @media only screen and (min-width: 768px) and (max-width: 879px){
+        header{
+            min-width: 768px;
+        }
+
+        .logo{
+            display: none;
+        }
+
+        .title{
+            color: rgb(255, 255, 255);
+            font-size: 300%;
+        }
+        
+        .title:hover{
+            color: rgb(0, 0, 0);
+            font-size: 300%;
+        }
+        
+        .sub-title{
+            display: none;   
+        }
+
+        .topheader{
+            width: auto;
+        }
+        
+        footer{
+            width: auto;
+        }
+        
+        .nav{
+            width: auto;
+        }
+
+        .banner-container{
+            height: 900px;
+            width: 800px;
+            width: auto;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #e81179;
+        }
+
+        .article-container-grid{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(3, 198px);
+            gap: 4px;
+        }
+
+        .columns-container{
+            height: 200px;
+            width: 600px;
+            margin: 2px;        
+        }       
+
+
+    } 
 
 
 
