@@ -1,0 +1,66 @@
+/*Header*/
+
+header {
+    background-image: url(../imagenes/soviet.jpg);
+    background-position: center;
+    background-size: cover;  
+    min-width: 1440px;
+}
+
+/*Menu social*/
+.social_nav{
+    width: 1200px;
+    @include margenes (auto, 5px);
+    background-color: #8B0000;
+    @extend %flexbox;
+    li{
+        &:hover{
+            background-color: black;}
+    }        
+    a{
+        @include altura(100%, 100%);
+        @include margenes (2px, 5px); 
+    }
+}
+
+/*Logo y Título*/
+
+.logo-container{
+    @extend %flexbox;
+    align-items: center;
+}
+
+.logo{
+    @include altura(auto, 150px);
+}
+
+.title{
+    color: rgb(255, 255, 255);
+    font-size: 400%;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+    &:hover{
+        color: rgb(0, 0, 0);
+        -webkit-text-stroke: 2px rgb(255, 255, 255);
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+.sub-title{
+    color: rgb(0, 0, 0);
+    font-size: 180%;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:-20px;
+    text-decoration: none;
+    &:hover{
+        color: rgb(255, 255, 255);
+        font-size: 180%;
+        -webkit-text-stroke: 1px rgb(0, 0, 0);
+    }
+}  

@@ -1,0 +1,39 @@
+/*Por defecto*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+#h1page{
+    text-align: center;
+}
+
+p{
+    margin: 10px;
+    text-align: left;
+}
+
+.page_image_container{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+}
+
+#postimages{    
+    width: 100%;
+    box-shadow:0px 3px 5px rgba(15,15,15, .5) ;
+}
+
+.others-articles h1{
+    margin-top: 10px;
+}
+

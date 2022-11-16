@@ -1,0 +1,104 @@
+/*Otros artículos (entradas generales) y aside*/
+/*Otro artículos*/
+
+.others-articles-aside{
+  height: auto;
+  margin: auto;
+  padding: 0% 5px 0% 5px;
+  @extend %flexbox;    
+}
+
+.others-articles{
+  @include altura(auto, 900px);
+  margin-bottom: 5px;
+}
+
+.tittles-banner{
+  color: black;
+  font-size: 120%;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.grid-container{    
+  display: grid;
+  grid-template-rows: 150px 150px 150px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-left: 5px;   
+}
+
+.grid-item{
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 100%;
+  box-shadow:0px 3px 5px rgba(15,15,15, .5) ;
+  &:hover{
+    transform: scale(0.9);
+    transition: 1s;
+    filter: brightness(70%);
+  }
+  img{
+    @include altura(100%, 100%);
+    object-fit: cover; 
+    filter: brightness(100%);
+  }
+}
+
+.title-others-inside{
+  position: absolute;
+  bottom: 0;
+  z-index: 10000;
+}
+
+.page-responsive{
+  margin: auto;
+}
+
+/*Aside*/
+
+aside{
+  @include altura(500px, 280px);
+  padding: 5px;
+  position: sticky;
+  top: 0;   
+}
+
+.tittles-aside{
+  color: black;
+  font-size: 110%;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.asideitems{
+  @extend %flexbox;    
+  margin: 10px;
+  img{
+    @include altura(35px, auto);
+    padding: 2px;
+    margin: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #3b5998;
+  }
+}
+
+.recommended-none{
+  h4{
+    overflow: hidden;
+    color: black;
+    font-size: 100%;
+  }
+}
+
+.aside_recommended{
+  margin: 2px;
+  padding: 3px;
+  @extend %flexbox; 
+  @include altura(50px, auto); 
+}
+
+
+

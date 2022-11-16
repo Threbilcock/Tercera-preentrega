@@ -1,0 +1,9 @@
+@mixin altura ($alto, $ancho) {
+    height: $alto;
+    width: $ancho;   
+}
+
+@mixin margenes ($margen, $relleno) {
+    margin: $margen;
+    padding: $relleno;
+}
