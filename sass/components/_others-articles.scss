@@ -9,7 +9,8 @@
 }
 
 .others-articles{
-  @include altura(auto, 900px);
+  height: auto;
+  width: 900px;
   margin-bottom: 5px;
 }
 
@@ -29,16 +30,16 @@
 }
 
 .grid-item{
-  border: 1px solid black;
+  box-shadow:1px 3px 5px rgba(1,1,1, .5);
   position: relative;
   overflow: hidden;
   font-weight: bold;
   font-size: 100%;
-  box-shadow:0px 3px 5px rgba(15,15,15, .5) ;
+
   &:hover{
     transform: scale(0.9);
     transition: 1s;
-    filter: brightness(70%);
+    filter: brightness(95%);
   }
   img{
     @include altura(100%, 100%);
@@ -51,6 +52,10 @@
   position: absolute;
   bottom: 0;
   z-index: 10000;
+  color: rgb(255, 255, 255);
+  font-size: 150%;
+  -webkit-text-stroke: 1px black;
+  overflow: hidden;
 }
 
 .page-responsive{
@@ -60,10 +65,13 @@
 /*Aside*/
 
 aside{
-  @include altura(500px, 280px);
+  height: 500px;
+  width: 280px;
+  margin-left: 10px;
   padding: 5px;
   position: sticky;
   top: 0;   
+
 }
 
 .tittles-aside{
@@ -98,6 +106,13 @@ aside{
   padding: 3px;
   @extend %flexbox; 
   @include altura(50px, auto); 
+  img{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 6px;
+    margin-right: 3px;
+  }
 }
 
 

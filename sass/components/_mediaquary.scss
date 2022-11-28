@@ -109,6 +109,10 @@
         flex-wrap: wrap;
     }
 
+    .columns-container{
+        margin: 0px;
+    }
+
     .carousel-container{        
         font-weight: bold;
     }
@@ -173,10 +177,6 @@
         height: 240px;
     }
 
-    .grid-item{
-        border: 1px solid black;
-    }
-    
     .grid-item img{
         height: 100%;
         width: 100%;
@@ -217,6 +217,10 @@
         align-content: space-around;
         justify-content: space-between;
         flex-wrap: wrap;     
+    }
+
+    .columns-container{
+        margin: 0px;
     }
 
     .carousel-container{        
@@ -261,6 +265,12 @@
         width: 120vh;            
         padding: 5px;          
         display: flex;
+        justify-content: center;
+    }
+
+    #channel{
+        width: 90vw;
+        height: 38vh;
     }
 
     .social_none {
@@ -271,16 +281,6 @@
         display: none;
     }
 
-    aside{
-        display: flex;
-        justify-content: center;
-    }
-
-    #channel{
-        width: 400px;
-        height: 240px;
-    }
-
     .grid-container{    
         display: grid;
         grid-template-rows: repeat(6, 150px);
@@ -289,10 +289,6 @@
         margin-left: 5px; 
     }
 
-    .grid-item{
-        border: 1px solid black;
-    }
-    
     .grid-item img{
         height: 100%;
         width: 100%;
@@ -336,6 +332,10 @@
         flex-wrap: wrap;     
     }
 
+    .columns-container{
+        margin: 0px;
+    }
+
     .carousel-container{        
         font-weight: bold;
     }
@@ -361,9 +361,7 @@
     .others-articles-aside{
         height: auto;
         margin: auto;
-        padding:5px;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
     }
     
@@ -373,14 +371,6 @@
         padding: 5px;      
     }
 
-    aside{
-        height: 290px;
-        width: 120vh;            
-        padding: 5px;          
-        display: flex;
-        justify-content: center;
-    }
-    
     .social_none{
         display: none; 
     }
@@ -398,7 +388,6 @@
     }
 
     .grid-item{
-        border: 1px solid black;
         img{
             height: 100%;
             width: 100%;
@@ -406,10 +395,7 @@
         }
     }    
 
-    #channel{
-        width: 90vw;
-        height: 37vh;
-    }
+
 }    
 
 @media only screen and (min-width: 320px) and (max-width: 480px){
@@ -448,6 +434,10 @@
         flex-wrap: wrap;     
     }
 
+    .columns-container{
+        margin: 0px;
+    }
+
     .carousel-container{        
         font-weight: bold;
     }
@@ -492,13 +482,13 @@
         display: flex;
     }
     
+    #channel{
+        width: 90vw;
+        height: 25vh;
+    }
+    
     .asidesocial{
         display: none;
-    }
-
-    aside{
-        display: flex;
-        justify-content: center;
     }
 
     .grid-container{    
@@ -510,16 +500,12 @@
     }
 
     .grid-item{
-        border: 1px solid black;
         img{
             height: 100%;
             width: 100%;
             object-fit: cover; 
         }
-    }
-    
-    #channel{
-        width: 90vw;
-        height: 25vh;
-    }
+    }   
+
+
 } 

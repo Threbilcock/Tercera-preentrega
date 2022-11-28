@@ -9,11 +9,14 @@ header {
 
 /*Menu social*/
 .social_nav{
-    width: 1200px;
+    @include altura(42px, 1200px);
     @include margenes (auto, 5px);
     background-color: #8B0000;
     @extend %flexbox;
+    align-items: center;
     li{
+        padding: 6px 3px 7px 2px;
+        border-radius: 5px;
         &:hover{
             background-color: black;}
     }        

@@ -1,0 +1,26 @@
+.author{
+    box-shadow:1px 1px 5px rgba(1,1,1, .5);
+    height: 151px;
+    width: auto;
+    display: flex;
+    background-color: rgba(229, 0, 0, 0.111);
+}
+
+.author_photo{
+    margin: 2px;
+    width: 150px;
+    border: 1px solid black;
+    img{
+        width:145px;
+    }
+}
+
+.author_biography{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.author_name{
+    font-weight: bold;
+}
+

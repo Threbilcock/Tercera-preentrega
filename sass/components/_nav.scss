@@ -3,7 +3,7 @@
 nav{
     background-color: #8B0000; 
     @include margenes (auto, 5px 10px 5px 10px);
-    width: 1200px;
+    @include altura(auto, 1200px);
     @extend %flexalign;
     a{
         color: white;

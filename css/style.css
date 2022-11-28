@@ -57,10 +57,16 @@ header {
 
 /*Menu social*/
 .social_nav {
+  height: 42px;
   width: 1200px;
   margin: auto;
   padding: 5px;
   background-color: #8B0000;
+  align-items: center;
+}
+.social_nav li {
+  padding: 6px 3px 7px 2px;
+  border-radius: 5px;
 }
 .social_nav li:hover {
   background-color: black;
@@ -118,6 +124,7 @@ nav {
   background-color: #8B0000;
   margin: auto;
   padding: 5px 10px 5px 10px;
+  height: auto;
   width: 1200px;
 }
 nav a {
@@ -166,7 +173,7 @@ input:focus {
 .banner-container {
   margin: auto;
   padding: 0% 10px 0% 5px;
-  height: 500px;
+  height: 520px;
   width: auto;
 }
 .banner-container p {
@@ -182,8 +189,7 @@ input:focus {
 }
 
 .carousel-inner {
-  width: 600px;
-  box-shadow: 0px 3px 5px rgba(1, 1, 1, 0.5);
+  width: 620px;
 }
 .carousel-inner img {
   height: 100%;
@@ -192,27 +198,27 @@ input:focus {
 
 /*Columnas de artículos del Banner*/
 .columns-container {
-  margin: 2px;
+  margin: 2px 15px 2px 0px;
   height: 500px;
-  width: 290px;
+  width: 280px;
 }
 
 .article-container-grid {
   display: grid;
   grid-template-rows: repeat(3, 147px);
   grid-template-columns: 1fr;
-  gap: 4px;
+  gap: 10px;
 }
 .article-container-grid img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border: 1px solid rgba(149, 147, 147, 0.341);
 }
 
 .card-article {
   position: relative;
   overflow: hidden;
+  box-shadow: 1px 1px 5px rgba(1, 1, 1, 0.5);
 }
 .card-article:hover .card-title {
   visibility: visible;
@@ -222,13 +228,16 @@ input:focus {
   position: absolute;
   z-index: 10000;
   bottom: 0;
-  background-color: #8b0000;
-  width: 99vw;
   visibility: hidden;
 }
 .card-title a {
   text-decoration: none;
+}
+.card-title p {
+  font-size: 150%;
   color: #ffffff;
+  -webkit-text-stroke: 1px black;
+  overflow: hidden;
 }
 
 .image-animation:hover {
@@ -281,17 +290,16 @@ input:focus {
 }
 
 .grid-item {
-  border: 1px solid black;
+  box-shadow: 1px 3px 5px rgba(1, 1, 1, 0.5);
   position: relative;
   overflow: hidden;
   font-weight: bold;
   font-size: 100%;
-  box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
 }
 .grid-item:hover {
   transform: scale(0.9);
   transition: 1s;
-  filter: brightness(70%);
+  filter: brightness(95%);
 }
 .grid-item img {
   height: 100%;
@@ -304,6 +312,10 @@ input:focus {
   position: absolute;
   bottom: 0;
   z-index: 10000;
+  color: rgb(255, 255, 255);
+  font-size: 150%;
+  -webkit-text-stroke: 1px black;
+  overflow: hidden;
 }
 
 .page-responsive {
@@ -314,6 +326,7 @@ input:focus {
 aside {
   height: 500px;
   width: 280px;
+  margin-left: 10px;
   padding: 5px;
   position: sticky;
   top: 0;
@@ -349,6 +362,13 @@ aside {
   padding: 3px;
   height: 50px;
   width: auto;
+}
+.aside_recommended img {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 6px;
+  margin-right: 3px;
 }
 
 /*Responsive*/
@@ -438,6 +458,9 @@ aside {
     align-content: space-around;
     flex-wrap: wrap;
   }
+  .columns-container {
+    margin: 0px;
+  }
   .carousel-container {
     font-weight: bold;
   }
@@ -491,9 +514,6 @@ aside {
     width: 400px;
     height: 240px;
   }
-  .grid-item {
-    border: 1px solid black;
-  }
   .grid-item img {
     height: 100%;
     width: 100%;
@@ -527,6 +547,9 @@ aside {
     align-content: space-around;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+  .columns-container {
+    margin: 0px;
   }
   .carousel-container {
     font-weight: bold;
@@ -564,20 +587,17 @@ aside {
     width: 120vh;
     padding: 5px;
     display: flex;
+    justify-content: center;
+  }
+  #channel {
+    width: 90vw;
+    height: 38vh;
   }
   .social_none {
     display: none;
   }
   .recommended-none {
     display: none;
-  }
-  aside {
-    display: flex;
-    justify-content: center;
-  }
-  #channel {
-    width: 400px;
-    height: 240px;
   }
   .grid-container {
     display: grid;
@@ -586,9 +606,6 @@ aside {
     gap: 10px;
     margin-left: 5px;
   }
-  .grid-item {
-    border: 1px solid black;
-  }
   .grid-item img {
     height: 100%;
     width: 100%;
@@ -624,6 +641,9 @@ aside {
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  .columns-container {
+    margin: 0px;
+  }
   .carousel-container {
     font-weight: bold;
   }
@@ -645,22 +665,13 @@ aside {
   .others-articles-aside {
     height: auto;
     margin: auto;
-    padding: 5px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
   }
   .others-articles {
     height: auto;
     width: 100vh;
     padding: 5px;
-  }
-  aside {
-    height: 290px;
-    width: 120vh;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
   }
   .social_none {
     display: none;
@@ -675,17 +686,10 @@ aside {
     gap: 10px;
     margin-left: 5px;
   }
-  .grid-item {
-    border: 1px solid black;
-  }
   .grid-item img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-  }
-  #channel {
-    width: 90vw;
-    height: 37vh;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -716,6 +720,9 @@ aside {
     align-content: space-around;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+  .columns-container {
+    margin: 0px;
   }
   .carousel-container {
     font-weight: bold;
@@ -754,12 +761,12 @@ aside {
     padding: 5px;
     display: flex;
   }
+  #channel {
+    width: 90vw;
+    height: 25vh;
+  }
   .asidesocial {
     display: none;
-  }
-  aside {
-    display: flex;
-    justify-content: center;
   }
   .grid-container {
     display: grid;
@@ -768,18 +775,36 @@ aside {
     gap: 10px;
     margin-left: 5px;
   }
-  .grid-item {
-    border: 1px solid black;
-  }
   .grid-item img {
     height: 100%;
     width: 100%;
     object-fit: cover;
   }
-  #channel {
-    width: 90vw;
-    height: 25vh;
-  }
+}
+.author {
+  box-shadow: 1px 1px 5px rgba(1, 1, 1, 0.5);
+  height: 151px;
+  width: auto;
+  display: flex;
+  background-color: rgba(229, 0, 0, 0.111);
+}
+
+.author_photo {
+  margin: 2px;
+  width: 150px;
+  border: 1px solid black;
+}
+.author_photo img {
+  width: 145px;
+}
+
+.author_biography {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.author_name {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
